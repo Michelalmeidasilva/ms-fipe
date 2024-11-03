@@ -1,0 +1,9 @@
+name: ms-fipe
+
+services:
+  memcached:
+    image: memcached
+    command:
+      - --conn-limit=1024
+      - --memory-limit=64
+      - --threads=4
